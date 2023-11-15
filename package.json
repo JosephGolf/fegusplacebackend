@@ -11,7 +11,7 @@
     "start": "nodemon index.js"
   },
   "engines": {
-    "node": "10.19.0"
+    "node": "18.0.0"
   },
   "author": "",
   "license": "ISC",
