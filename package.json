@@ -10,9 +10,6 @@
     "heroku-postbuild": "npm run build ",
     "start": "nodemon index.js"
   },
-  "engines": {
-    "node": "10.19.0"
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
