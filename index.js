@@ -44,7 +44,7 @@ server.use('/order',orders)
 mongoose
   .connect(
     process.env.MONGODB_URI ||
-      "mongodb://localhost:27017/jumiaekomas",
+      "mongodb+srv://legacyautoventures:owE94CN1xZ0VAsSH@cluster0.ud8jzxn.mongodb.net/fegusplace?retryWrites=true&w=majority",
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => {
