@@ -5,13 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd jumia-front && npm run build",
-    "install-jumia": "cd jumia-front && npm install",
-    "heroku-postbuild": "npm run install-jumia && npm run build ",
+    "build": "npm run build",
+    "install-jumia": "npm install",
+    "heroku-postbuild": "npm run build ",
     "start": "nodemon index.js"
-  },
-  "engines": {
-    "node": "10.19.0"
   },
   "author": "",
   "license": "ISC",
@@ -34,6 +31,5 @@
   "devDependencies": {
     "nodemon": "^2.0.7",
     "normalize-path": "^3.0.0"
-  },
-
+  }
 }
