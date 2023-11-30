@@ -74,8 +74,9 @@ router.get("/get-all", (req, res) => {
 router.get("/getbycat/", async (req, res) => {
   let resArr = [];
   let cat_name = req.params.cat_name;
-  await Products.find({ }).then((data) => {
+  await Products.find({}).then((data) => {
     resArr.push(data);
+    res.status(200).send(resArr);
   });
   /*await Products.find({ "product_cat.main": "Laurel Ray" }).then((data) => {
     resArr.push(data);
