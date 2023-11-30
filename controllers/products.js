@@ -74,10 +74,10 @@ router.get("/get-all", (req, res) => {
 router.get("/getbycat/", async (req, res) => {
   let resArr = [];
   let cat_name = req.params.cat_name;
-  await Products.find({ "product_cat.main": "Laurel Ray" }).then((data) => {
+  await Products.find({ }).then((data) => {
     resArr.push(data);
   });
-  await Products.find({ "product_cat.main": "Laurel Ray" }).then((data) => {
+  /*await Products.find({ "product_cat.main": "Laurel Ray" }).then((data) => {
     resArr.push(data);
   });
 
@@ -94,7 +94,7 @@ router.get("/getbycat/", async (req, res) => {
   await Products.find({ "product_cat.main": "Electronics" }).then((data) => {
     resArr.push(data);
     res.status(200).send(resArr);
-  });
+  });*/
 });
 //=====
 router.get("/get-Product-type/:type", (req, resp) => {
