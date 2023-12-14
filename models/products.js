@@ -6,7 +6,6 @@ var productsSchema = new mongoose.Schema({
     unique: true,
   },
   quantity:Number,
-  nameAr: String,
   brand: String,
   description: String,
   price: Number,
